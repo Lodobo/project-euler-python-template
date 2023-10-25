@@ -8,7 +8,7 @@ EOF
 )
 
 for i in {1..500}; do
-  num=$(printf "%03d" "$i")  # This adds leading zeroes.
+  num=$(printf "%03d" "$i")
   filename="pb_$num.py"
   touch "$filename"
   echo -e "# $filename\n" >> "$filename"
